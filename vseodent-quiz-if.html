@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ендодонтія. Сучасні протоколи — Івано-Франківськ, 12 вересня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E1E45;
+  --navy-2:#16295C;
+  --blue:#2B5CE6;
+  --blue-dark:#1E45B8;
+  --ice:#E9EFFD;
+  --ice-2:#F5F8FE;
+  --line:#DCE4F5;
+  --ink:#0E1E45;
+  --muted:#5D6885;
+  --white:#fff;
+  --ok:#1B9E6B;
+  --r:14px;
+  --shadow:0 18px 50px -20px rgba(14,30,69,.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Manrope',system-ui,-apple-system,sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+
+/* ---------- header ---------- */
+.top{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px;font-size:19px;color:var(--navy)}
+.brand span{color:var(--blue)}
+.top-right{display:flex;align-items:center;gap:18px}
+.top-phone{color:var(--muted);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}
+.top-phone:hover{color:var(--blue)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:0;cursor:pointer;font-family:inherit;font-weight:700;
+  border-radius:10px;transition:.18s ease;text-decoration:none;
+}
+.btn-primary{background:var(--blue);color:#fff;padding:12px 22px;font-size:15px;box-shadow:0 8px 20px -8px rgba(43,92,230,.7)}
+.btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px)}
+.btn-primary:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-ghost{background:transparent;color:var(--muted);padding:12px 18px;font-size:15px;border:1px solid var(--line)}
+.btn-ghost:hover{color:var(--navy);border-color:#C3CFEA}
+.btn-sm{padding:10px 18px;font-size:14px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero::before,.hero::after{
+  content:'';position:absolute;border-radius:50%;background:var(--blue);opacity:.16;
+}
+.hero::before{width:520px;height:520px;right:-160px;top:-220px}
+.hero::after{width:300px;height:300px;right:120px;bottom:-190px;opacity:.1}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;padding:60px 0 64px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
+  color:#93AAEC;margin-bottom:18px;
+}
+.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--blue);display:block}
+h1{font-size:clamp(30px,4vw,46px);line-height:1.12;font-weight:800;letter-spacing:-.6px}
+.hero p.lead{margin-top:18px;font-size:17px;color:#C3D0EE;max-width:520px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);
+  padding:9px 15px;border-radius:999px;font-size:14px;font-weight:600;color:#E4EBFB;
+}
+.chip b{color:#fff}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;align-items:center}
+.hero-note{font-size:13.5px;color:#8FA3D6}
+
+/* quiz card in hero */
+.card{
+  background:#fff;border-radius:20px;box-shadow:var(--shadow);
+  color:var(--ink);overflow:hidden;
+}
+.card-head{padding:22px 26px 0}
+.card-kicker{font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--blue)}
+.card-title{font-size:19px;font-weight:800;margin-top:6px;line-height:1.3}
+.card-sub{font-size:13.5px;color:var(--muted);margin-top:6px}
+.bar{height:5px;background:var(--ice);border-radius:99px;margin:18px 26px 0;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--blue);border-radius:99px;transition:width .35s cubic-bezier(.4,0,.2,1)}
+.steps-count{font-size:12.5px;color:var(--muted);font-weight:600;padding:10px 26px 0}
+.card-body{padding:16px 26px 26px}
+
+.opt{
+  display:flex;align-items:center;gap:12px;width:100%;
+  border:1.5px solid var(--line);background:#fff;
+  padding:14px 16px;border-radius:12px;margin-bottom:10px;
+  font-family:inherit;font-size:15px;font-weight:600;color:var(--ink);
+  cursor:pointer;text-align:left;transition:.15s ease;
+}
+.opt:hover{border-color:var(--blue);background:var(--ice-2)}
+.opt:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.opt .mark{
+  width:22px;height:22px;border-radius:50%;border:2px solid var(--line);
+  flex:0 0 22px;display:grid;place-items:center;transition:.15s;
+}
+.opt.sel{border-color:var(--blue);background:var(--ice-2)}
+.opt.sel .mark{border-color:var(--blue);background:var(--blue)}
+.opt.sel .mark::after{content:'';width:8px;height:8px;border-radius:50%;background:#fff}
+
+.q-title{font-size:17px;font-weight:800;line-height:1.35;margin-bottom:4px}
+.q-hint{font-size:13.5px;color:var(--muted);margin-bottom:16px}
+
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.field input{
+  width:100%;font-family:inherit;font-size:15px;padding:13px 14px;
+  border:1.5px solid var(--line);border-radius:11px;color:var(--ink);background:#fff;
+  transition:.15s;
+}
+.field input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(43,92,230,.12)}
+.field input::placeholder{color:#9AA5BF}
+.err{font-size:12.5px;color:#D93636;margin-top:5px;display:none;font-weight:600}
+.field.bad input{border-color:#D93636}
+.field.bad .err{display:block}
+
+.nav-row{display:flex;gap:10px;align-items:center;margin-top:6px}
+.nav-row .btn-primary{flex:1}
+.legal{font-size:11.5px;color:#8B95AD;margin-top:12px;line-height:1.5}
+
+.card-foot{
+  background:var(--ice-2);border-top:1px solid var(--line);
+  padding:14px 26px;display:flex;align-items:center;gap:10px;
+  font-size:13px;color:var(--muted);font-weight:600;
+}
+.dotpulse{width:8px;height:8px;border-radius:50%;background:var(--ok);flex:0 0 8px;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* success */
+.done{text-align:center;padding:10px 0 6px}
+.done .tick{
+  width:62px;height:62px;border-radius:50%;background:var(--ok);
+  display:grid;place-items:center;margin:0 auto 18px;
+}
+.done .tick svg{width:30px;height:30px}
+.done h3{font-size:21px;font-weight:800;margin-bottom:8px}
+.done p{font-size:14.5px;color:var(--muted);max-width:340px;margin:0 auto 6px}
+.done .recap{
+  background:var(--ice-2);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;margin-top:18px;text-align:left;font-size:13.5px;color:var(--muted);
+}
+.done .recap b{color:var(--ink);display:block;margin-bottom:6px;font-size:13px}
+.done .recap li{margin-left:16px;margin-bottom:3px}
+
+/* ---------- sections ---------- */
+section{padding:72px 0}
+.sec-head{max-width:640px;margin-bottom:38px}
+.sec-eyebrow{font-size:12.5px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+h2{font-size:clamp(25px,3.2vw,34px);font-weight:800;letter-spacing:-.4px;line-height:1.2}
+.sec-head p{margin-top:12px;font-size:16px;color:var(--muted)}
+
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tile{background:var(--ice-2);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.tile h4{font-size:16px;font-weight:800;margin-bottom:12px}
+.tile li{font-size:14.5px;color:var(--muted);margin-left:17px;margin-bottom:7px}
+.tile .ic{
+  width:38px;height:38px;border-radius:10px;background:var(--ice);
+  display:grid;place-items:center;margin-bottom:14px;
+}
+.tile .ic svg{width:19px;height:19px;stroke:var(--blue)}
+
+.prog{background:var(--ice-2)}
+.prog-col h4{font-size:16px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.prog-col h4 em{
+  font-style:normal;font-size:11px;font-weight:800;letter-spacing:1px;
+  background:var(--blue);color:#fff;padding:4px 9px;border-radius:6px;
+}
+.prog-col{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.prog-col ul{list-style:none}
+.prog-col li{font-size:14.5px;color:var(--muted);padding:9px 0 9px 24px;position:relative;border-bottom:1px solid #EFF3FB}
+.prog-col li:last-child{border-bottom:0}
+.prog-col li::before{
+  content:'';position:absolute;left:4px;top:17px;
+  width:6px;height:6px;border-radius:50%;background:var(--blue);
+}
+
+.day{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.day h4{font-size:16px;font-weight:800;margin-bottom:16px}
+.day-row{display:flex;gap:16px;padding:10px 0;border-bottom:1px solid #EFF3FB;font-size:14.5px}
+.day-row:last-child{border-bottom:0}
+.day-row time{font-weight:800;color:var(--blue);flex:0 0 92px;font-variant-numeric:tabular-nums}
+.day-row span{color:var(--muted)}
+
+/* pricing */
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pcard{border:1.5px solid var(--line);border-radius:var(--r);padding:26px;background:#fff;position:relative}
+.pcard.hi{border-color:var(--blue);background:var(--ice-2)}
+.pcard .tag{
+  position:absolute;top:-11px;left:26px;background:var(--blue);color:#fff;
+  font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;
+  padding:5px 11px;border-radius:6px;
+}
+.pcard h4{font-size:15px;font-weight:800;margin-bottom:18px}
+.prow{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #EFF3FB}
+.prow:last-of-type{border-bottom:0}
+.prow span{font-size:14px;color:var(--muted)}
+.prow b{font-size:19px;font-weight:800;font-variant-numeric:tabular-nums}
+.pnote{font-size:12.5px;color:#8B95AD;margin-top:14px}
+
+/* lecturer */
+.lect{background:var(--navy);color:#fff}
+.lect-in{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+.lect h2{color:#fff}
+.lect p{color:#C3D0EE;font-size:16px;margin-top:14px}
+.lect-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.lect-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:18px}
+.lect-stat b{display:block;font-size:26px;font-weight:800}
+.lect-stat span{font-size:12.5px;color:#93AAEC;font-weight:600}
+.lect-photo{border-radius:18px;overflow:hidden;background:var(--navy-2);aspect-ratio:4/3;position:relative}
+.lect-photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+
+/* faq */
+.faq details{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:#fff;overflow:hidden}
+.faq summary{
+  padding:17px 20px;font-weight:700;font-size:15.5px;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-size:22px;color:var(--blue);font-weight:700;line-height:1}
+.faq details[open] summary::after{content:'–'}
+.faq details[open] summary{border-bottom:1px solid var(--line)}
+.faq .ans{padding:16px 20px;font-size:14.5px;color:var(--muted)}
+.faq .ans li{margin-left:18px}
+
+/* final cta */
+.final{background:var(--ice-2);border-top:1px solid var(--line)}
+.final-in{text-align:center;max-width:620px;margin:0 auto}
+.final p{color:var(--muted);font-size:16px;margin-top:12px;margin-bottom:26px}
+
+footer{background:var(--navy);color:#8FA3D6;padding:32px 0;font-size:13.5px}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer a{color:#C3D0EE;text-decoration:none;font-weight:600}
+footer a:hover{color:#fff}
+
+/* sticky mobile cta */
+.sticky{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);padding:12px 16px;
+}
+.sticky .btn{width:100%}
+
+@media(max-width:960px){
+  .hero-in{grid-template-columns:1fr;gap:34px;padding:44px 0 50px}
+  .lect-in{grid-template-columns:1fr;gap:28px}
+  .lect-photo{order:-1;aspect-ratio:16/10}
+  .grid-4{grid-template-columns:1fr 1fr}
+  .price{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  section{padding:52px 0}
+  .grid-4,.grid-3{grid-template-columns:1fr}
+  .top-phone{display:none}
+  .lect-stats{grid-template-columns:1fr}
+  .sticky{display:block}
+  body{padding-bottom:74px}
+  .card-body,.card-head{padding-left:20px;padding-right:20px}
+  .bar,.steps-count,.card-foot{margin-left:0;padding-left:20px;padding-right:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand">VSEO<span>DENT</span></div>
+    <div class="top-right">
+      <a class="top-phone" href="tel:+380689260609">+38 (068) 926 06 09</a>
+      <a class="btn btn-primary btn-sm" href="#quiz">Забронювати місце</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO + QUIZ -->
+<div class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <div class="eyebrow"><i></i> Івано-Франківськ · 12 вересня 2026</div>
+      <h1>Ендодонтія.<br>Сучасні протоколи</h1>
+      <p class="lead">Одноденний практичний курс Ігоря Ноєнка. Теорія вранці, робота руками на зубах — після обіду. 21 бал БПР і алгоритми, які працюють уже в понеділок.</p>
+      <div class="meta">
+        <span class="chip">📍 <b>м. Івано-Франківськ</b></span>
+        <span class="chip">🗓 <b>12 вересня 2026</b></span>
+        <span class="chip">🏅 <b>21 бал БПР</b></span>
+        <span class="chip">⏱ <b>09:30 – 19:00</b></span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#program">Дивитись програму</a>
+        <span class="hero-note">Кількість місць на практику обмежена</span>
+      </div>
+    </div>
+
+    <!-- QUIZ CARD -->
+    <div class="card" id="quiz">
+      <div class="card-head">
+        <div class="card-kicker">Підбір формату участі</div>
+        <div class="card-title">4 питання — і ми підберемо ваш формат</div>
+        <div class="card-sub">Менеджер передзвонить і забронює місце. Займе менше хвилини.</div>
+      </div>
+      <div class="bar"><i id="barFill"></i></div>
+      <div class="steps-count" id="stepCount">Крок 1 з 5</div>
+      <div class="card-body" id="quizBody"></div>
+      <div class="card-foot" id="cardFoot"><span class="dotpulse"></span> Залишилось 6 місць на практичну частину</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Про курс</div>
+      <h2>Один день, після якого канали перестають бути лотереєю</h2>
+      <p>Курс побудований так, щоб між теорією і руками не було розриву: почули алгоритм — одразу відпрацювали його на зубі.</p>
+    </div>
+    <div class="grid-4">
+      <div class="tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h4>Для кого</h4>
+        <ul>
+          <li>Стоматологи-терапевти</li>
+          <li>Лікарі, які хочуть систематизувати знання</li>
+          <li>Інтерни</li>
+          <li>Студенти</li>
+        </ul>
+      </div>
+      <div class="tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <h4>Що буде на курсі</h4>
+        <ul>
+          <li>Сучасні протоколи ендодонтичного лікування</li>
+          <li>Покрокові клінічні алгоритми</li>
+          <li>Розбір реальних клінічних випадків</li>
+          <li>Практичні рекомендації для щоденної роботи</li>
+        </ul>
+      </div>
+      <div class="tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg></div>
+        <h4>Що ви отримаєте</h4>
+        <ul>
+          <li>Практичні клінічні алгоритми</li>
+          <li>Сучасні протоколи лікування</li>
+          <li>Відповіді на клінічні запитання</li>
+          <li>Сертифікат із балами БПР</li>
+        </ul>
+      </div>
+      <div class="tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h4>Формат участі</h4>
+        <ul>
+          <li>Лекційна частина</li>
+          <li>Практична частина</li>
+          <li>Живе спілкування з лектором</li>
+          <li>Відповіді на запитання учасників</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="prog" id="program">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Програма</div>
+      <h2>Від аналізу анатомії до обтурації</h2>
+      <p>Повний маршрут каналу — у тому порядку, в якому ви проходите його на прийомі.</p>
+    </div>
+    <div class="grid-2">
+      <div class="prog-col">
+        <h4><em>Теорія</em> 10:00 – 15:30</h4>
+        <ul>
+          <li>Аналіз анатомії кореневих каналів</li>
+          <li>Скаутинг кореневих каналів</li>
+          <li>Корональна модифікація</li>
+          <li>Досягнення прохідності</li>
+          <li>Визначення робочої довжини</li>
+          <li>Створення килимової доріжки</li>
+          <li>Інструментальна обробка кореневих каналів</li>
+          <li>Калібрування апікального отвору</li>
+          <li>Обтурація кореневих каналів</li>
+        </ul>
+      </div>
+      <div class="prog-col">
+        <h4><em>Практика</em> 16:00 – 19:00</h4>
+        <ul>
+          <li>Фіксація зубів у моделі</li>
+          <li>Робота ручними інструментами</li>
+          <li>Робота ротаційними файлами</li>
+          <li>Стандартний та ускладнений протоколи</li>
+          <li>Обтурація методом вертикальної конденсації</li>
+        </ul>
+        <div style="margin-top:20px;padding:16px;background:var(--ice-2);border-radius:11px;font-size:13.5px;color:var(--muted)">
+          <b style="color:var(--ink);display:block;margin-bottom:6px">Що привезти з собою</b>
+          2–3 видалені зуби середньої складності зі створеним ендодонтичним доступом. Не гіпсувати — зуби мають бути готові до роботи без фіксації в моделях.
+        </div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h4>Розклад дня</h4>
+      <div class="day-row"><time>09:30</time><span>Реєстрація учасників</span></div>
+      <div class="day-row"><time>10:00</time><span>Теоретична частина</span></div>
+      <div class="day-row"><time>13:00</time><span>Обід</span></div>
+      <div class="day-row"><time>14:00</time><span>Теоретична частина</span></div>
+      <div class="day-row"><time>15:30</time><span>Кава-пауза</span></div>
+      <div class="day-row"><time>16:00</time><span>Практична частина</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LECTURER -->
+<section class="lect">
+  <div class="wrap lect-in">
+    <div class="lect-photo">
+      <img src="https://vseodent.com.ua/assets/media/images/lecturers/noenko.webp" alt="Ігор Ноєнко, лектор курсу" loading="lazy">
+    </div>
+    <div>
+      <div class="sec-eyebrow">Лектор</div>
+      <h2>Ігор Ноєнко</h2>
+      <p>Практикуючий лікар і лектор освітнього центру Vseodent. Веде курси з ендодонтії по всій Україні — від первинного лікування до переліковування під мікроскопом. Розповідає не «як має бути в книзі», а як воно працює на реальному прийомі.</p>
+      <div class="lect-stats">
+        <div class="lect-stat"><b>21</b><span>бал БПР за курс</span></div>
+        <div class="lect-stat"><b>6</b><span>міст України</span></div>
+        <div class="lect-stat"><b>1&nbsp;769</b><span>публікацій про навчання</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Умови участі</div>
+      <h2>Вартість</h2>
+      <p>Ціни діють до 12 вересня 2026. Бронь зберігається після попередньої оплати.</p>
+    </div>
+    <div class="price">
+      <div class="pcard hi">
+        <span class="tag">Найчастіший вибір</span>
+        <h4>Для лікарів</h4>
+        <div class="prow"><span>Лекція</span><b>5 400 грн</b></div>
+        <div class="prow"><span>Повний курс</span><b>10 800 грн</b></div>
+        <div class="pnote">Повний курс = лекція + практика на зубах.</div>
+      </div>
+      <div class="pcard">
+        <h4>Для студентів / інтернів</h4>
+        <div class="prow"><span>Лекція</span><b>3 900 грн</b></div>
+        <div class="prow"><span>Повний курс</span><b>8 100 грн</b></div>
+        <div class="pnote">Потрібне підтвердження статусу.</div>
+      </div>
+      <div class="pcard">
+        <h4>Для груп від 3 лікарів</h4>
+        <div class="prow"><span>Лекція</span><b>4 900 грн</b></div>
+        <div class="prow"><span>Повний курс</span><b>10 300 грн</b></div>
+        <div class="pnote">Ціна за одного учасника групи.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="prog">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Питання — відповідь</div>
+      <h2>Що питають найчастіше</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Скільки балів БПР нараховується?</summary>
+        <div class="ans">Згідно з наказом МОЗ України №446 від 22.02.2019: лекція — 10 балів, майстер-клас — 10 балів, практика на симуляційних тренажерах — 10 балів.</div>
+      </details>
+      <details>
+        <summary>Чи є знижки студентам та інтернам?</summary>
+        <div class="ans">Так. Для студентів та інтернів діє окремий тариф: лекція 3 900 грн, повний курс 8 100 грн.</div>
+      </details>
+      <details>
+        <summary>Чи є знижки для груп?</summary>
+        <div class="ans">Для груп від 3 лікарів діє окрема ціна на цей курс. Умови уточнюйте в менеджера.</div>
+      </details>
+      <details>
+        <summary>Як підтвердити оплату?</summary>
+        <div class="ans">Бронь зберігається тільки після попередньої оплати. Підтвердити можна будь-яким зручним способом — квитанція, скрин, повідомлення менеджеру.</div>
+      </details>
+      <details>
+        <summary>Які зуби брати на практику?</summary>
+        <div class="ans">2–3 видалені зуби середньої складності зі створеним ендодонтичним доступом. Зуби не гіпсувати — вони мають бути готові до роботи без фіксації у гіпсових моделях.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap final-in">
+    <h2>Готові взяти участь?</h2>
+    <p>Пройдіть підбір формату — менеджер зв'яжеться, відповість на питання і забронює за вами місце.</p>
+    <a class="btn btn-primary" href="#quiz">Підібрати формат участі</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>© 2018–2026 Vseodent · Навчання стоматологів</div>
+    <div><a href="tel:+380689260609">+38 (068) 926 06 09</a> · ПН–НД 9:00–19:00</div>
+  </div>
+</footer>
+
+<div class="sticky"><a class="btn btn-primary" href="#quiz">Забронювати місце</a></div>
+
+<script>
+(function(){
+  const steps = [
+    {
+      key:'role',
+      title:'Ким ви є на сьогодні?',
+      hint:'Від цього залежить тариф — для студентів та інтернів він нижчий.',
+      options:['Лікар-стоматолог','Інтерн','Студент','Керівник клініки — шукаю навчання команді']
+    },
+    {
+      key:'experience',
+      title:'Скільки каналів ви лікуєте на тиждень?',
+      hint:'Щоб лектор розумів, з яким рівнем групи працює.',
+      options:['Майже не беруся за ендо','До 5','5–15','Більше 15']
+    },
+    {
+      key:'pain',
+      title:'Що найчастіше йде не за планом?',
+      hint:'Оберіть найболючіше — цьому приділимо увагу на розборі.',
+      options:['Не знаходжу або не проходжу канал','Не тримаю робочу довжину','Ламаються інструменти','Незадовільна обтурація','Хочу просто систематизувати все з нуля']
+    },
+    {
+      key:'format',
+      title:'Який формат участі розглядаєте?',
+      hint:'Практика — це робота руками на власних зубах після обіду.',
+      options:['Повний курс: лекція + практика','Тільки лекція','Ще не вирішив — потрібна порада']
+    }
+  ];
+
+  const body = document.getElementById('quizBody');
+  const fill = document.getElementById('barFill');
+  const count = document.getElementById('stepCount');
+  const foot = document.getElementById('cardFoot');
+  const answers = {};
+  let i = 0;
+
+  const total = steps.length + 1;
+
+  function progress(){
+    fill.style.width = Math.round((i/total)*100) + '%';
+    count.textContent = i < steps.length
+      ? 'Крок ' + (i+1) + ' з ' + total
+      : (i === steps.length ? 'Останній крок' : 'Готово');
+  }
+
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+  function renderStep(){
+    progress();
+    const s = steps[i];
+    body.innerHTML =
+      '<div class="q-title">'+esc(s.title)+'</div>'+
+      '<div class="q-hint">'+esc(s.hint)+'</div>'+
+      s.options.map((o,idx)=>'<button class="opt" data-i="'+idx+'"><span class="mark"></span>'+esc(o)+'</button>').join('')+
+      (i>0?'<div class="nav-row"><button class="btn btn-ghost" id="back">← Назад</button></div>':'');
+
+    body.querySelectorAll('.opt').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        body.querySelectorAll('.opt').forEach(b=>b.classList.remove('sel'));
+        btn.classList.add('sel');
+        answers[s.key] = s.options[+btn.dataset.i];
+        setTimeout(()=>{ i++; i<steps.length ? renderStep() : renderForm(); }, 220);
+      });
+    });
+    const back = document.getElementById('back');
+    if(back) back.addEventListener('click',()=>{ i--; renderStep(); });
+  }
+
+  function renderForm(){
+    progress();
+    body.innerHTML =
+      '<div class="q-title">Куди надіслати деталі та бронь?</div>'+
+      '<div class="q-hint">Менеджер зателефонує в робочі години, підтвердить місце і надішле реквізити.</div>'+
+      '<div class="field" id="f-name"><label for="q-name">Ім\'я та прізвище</label><input id="q-name" type="text" placeholder="Олена Коваль" autocomplete="name"><div class="err">Вкажіть, як до вас звертатися</div></div>'+
+      '<div class="field" id="f-phone"><label for="q-phone">Телефон</label><input id="q-phone" type="tel" placeholder="+38 (0__) ___ __ __" autocomplete="tel"><div class="err">Схоже, у номері помилка</div></div>'+
+      '<div class="field" id="f-city"><label for="q-city">Місто (необов\'язково)</label><input id="q-city" type="text" placeholder="Івано-Франківськ"></div>'+
+      '<div class="nav-row"><button class="btn btn-ghost" id="back">←</button><button class="btn btn-primary" id="send">Забронювати місце</button></div>'+
+      '<div class="legal">Натискаючи кнопку, ви погоджуєтесь на обробку даних для зв\'язку щодо курсу. Спаму не буде.</div>';
+
+    const phone = document.getElementById('q-phone');
+    phone.addEventListener('input',()=>{
+      let d = phone.value.replace(/\D/g,'');
+      if(d.startsWith('380')) d = d.slice(2);
+      else if(d.startsWith('80')) d = d.slice(1);
+      d = d.slice(0,10);
+      let out = '';
+      if(d.length) out = '+38 (' + d.slice(0,3);
+      if(d.length>=4) out += ') ' + d.slice(3,6);
+      if(d.length>=7) out += ' ' + d.slice(6,8);
+      if(d.length>=9) out += ' ' + d.slice(8,10);
+      phone.value = out;
+    });
+
+    document.getElementById('back').addEventListener('click',()=>{ i=steps.length-1; renderStep(); });
+    document.getElementById('send').addEventListener('click',submit);
+    body.querySelectorAll('input').forEach(inp=>{
+      inp.addEventListener('keydown',e=>{ if(e.key==='Enter') submit(); });
+      inp.addEventListener('input',()=>inp.closest('.field').classList.remove('bad'));
+    });
+  }
+
+  function submit(){
+    const name = document.getElementById('q-name');
+    const phone = document.getElementById('q-phone');
+    let ok = true;
+    if(name.value.trim().length < 2){ document.getElementById('f-name').classList.add('bad'); ok = false; }
+    if(phone.value.replace(/\D/g,'').length < 12){ document.getElementById('f-phone').classList.add('bad'); ok = false; }
+    if(!ok) return;
+
+    answers.name = name.value.trim();
+    answers.phone = phone.value.trim();
+    answers.city = document.getElementById('q-city').value.trim();
+
+    const btn = document.getElementById('send');
+    btn.disabled = true;
+    btn.textContent = 'Надсилаємо…';
+
+    // demo: у бойовій версії тут відправка у Telegram / CRM
+    console.log('LEAD →', answers);
+
+    setTimeout(()=>{
+      i = total;
+      progress();
+      fill.style.width = '100%';
+      const price = answers.role === 'Студент' || answers.role === 'Інтерн'
+        ? (answers.format === 'Тільки лекція' ? '3 900 грн' : '8 100 грн')
+        : (answers.format === 'Тільки лекція' ? '5 400 грн' : '10 800 грн');
+      body.innerHTML =
+        '<div class="done">'+
+          '<div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>'+
+          '<h3>Місце за вами</h3>'+
+          '<p>Дякуємо, '+esc(answers.name.split(' ')[0])+'. Менеджер зателефонує на '+esc(answers.phone)+' у робочі години та підтвердить бронь.</p>'+
+          '<div class="recap"><b>Ваш формат</b><ul>'+
+            '<li>'+esc(answers.format || 'Формат уточнимо на дзвінку')+'</li>'+
+            '<li>Орієнтовна вартість: '+price+'</li>'+
+            '<li>12 вересня 2026, м. Івано-Франківськ</li>'+
+          '</ul></div>'+
+        '</div>';
+      foot.innerHTML = '<span class="dotpulse"></span> Заявку прийнято · середній час відповіді — 15 хв';
+    }, 900);
+  }
+
+  renderStep();
+})();
+</script>
+</body>
+</html>
