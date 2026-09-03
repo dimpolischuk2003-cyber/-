@@ -8,7 +8,7 @@
 ## Структура
 
 ```
-index.html            головна: hero, розклад, спікери, FAQ
+index.html            головн: hero, розклад, спікери, FAQ
 course.html           сторінка курсу (?slug=...)
 assets/css/styles.css усі стилі, розбиті на секції з коментарями
 assets/js/data.js     ← ВЕСЬ КОНТЕНТ ТУТ (курси, спікери, контакти, FAQ)
