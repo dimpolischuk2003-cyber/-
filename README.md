@@ -155,4 +155,6 @@ python3 -m http.server 8000
 
 Піксель `1516093250283344` уже вставлений в обидві сторінки.
 
-Ті самі події дублюються в `dataLayer` для Google Tag Manager. І все
+Ті самі події дублюються в `dataLayer` для Google Tag Manager. 
+
+Deployment trigger 04.09.2026
