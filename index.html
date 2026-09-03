@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Практичні курси для стоматологів — розклад на 2026 | VSEODENT</title>
+<meta name="description" content="Практичні курси VSEODENT для стоматологів: ендодонтія, Power Endo, професійна гігієна. Розклад дат по містах України, бали БПР, реєстрація онлайн за хвилину.">
+<meta property="og:title" content="Практичні курси для стоматологів | VSEODENT">
+<meta property="og:description" content="Оберіть тему, місто та дату — і зареєструйтеся онлайн. Бали БПР для лікарів.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1516093250283344');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1516093250283344&ev=PageView&noscript=1" alt=""></noscript>
+<!-- /Meta Pixel -->
+<link rel="stylesheet" href="assets/css/styles.css?v=a41c7d2e">
+<link rel="icon" href="assets/images/logo.webp">
+</head>
+<body>
+
+<!-- ============ ШАПКА ============ -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__logo" href="index.html"><img src="assets/images/logo.webp" alt="VSEODENT"></a>
+    <nav class="header__nav">
+      <a href="#kursy">Розклад</a>
+      <a href="#yak">Навчання</a>
+      <a href="#spikery">Спікери</a>
+      <a href="#secReviews">Відгуки</a>
+      <a href="#faq">Питання</a>
+      <a class="header__phone" data-phone href="#">+380</a>
+      <button class="btn btn--primary btn--sm" data-open-form>Забронювати місце</button>
+    </nav>
+    <button class="header__burger" id="burger" aria-expanded="false" aria-label="Меню"><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="container">
+      <ul>
+        <li><a href="#kursy">Розклад курсів</a></li>
+        <li><a href="#yak">Як проходить навчання</a></li>
+        <li><a href="#spikery">Спікери</a>
+      <a href="#secReviews">Відгуки</a></li>
+        <li><a href="#faq">Питання та відповіді</a></li>
+        <li><a data-phone href="#">+380</a></li>
+      </ul>
+      <button class="btn btn--primary btn--block" data-open-form>Забронювати місце</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <span class="eyebrow">Навчальний центр для стоматологів</span>
+      <h1>Практика, яку застосуєте <span class="brush">наступного дня<svg viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M6.5 26.8c62-7.2 124.9-11.4 187.7-12.1 20.1-.2 40.2.2 60.3 1.3 26.4 1.4 52.7 4 78.8 7.7 8.4 1.2 16.9 2.6 25.1 4.7 3.7.9 7.9 1.9 10.6 4.8-4.9 3.1-11.4 2.6-17 2.7-15.6.2-31.2-.6-46.7-1.6-46.5-3-93.1-5.2-139.7-4.6-51.3.6-102.6 3.9-153.5 10.2-3.5.4-7.2.8-10.6-.3-3.1-1-5.6-3.9-5.4-7.2.3-3.6 3.4-5 6.4-5.6z"/></svg></span></h1>
+      <p class="hero__lead">Курси з ендодонтії та професійної гігієни у містах України. Відкритий розклад, зрозуміла програма кожного дня і реєстрація, яка займає хвилину.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#kursy">Дивитися розклад</a>
+        <button class="btn btn--ghost" data-open-form>Підібрати курс</button>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat"><b id="statDates">—</b><span id="statDatesLabel">дат у розкладі</span></div>
+        <div class="hero__stat"><b id="statCities">—</b><span id="statCitiesLabel">міст</span></div>
+        <div class="hero__stat"><b>БПР</b><span>бали для лікарів</span></div>
+      </div>
+    </div>
+
+    <div class="hero__panel">
+      <img class="hero__photo" id="heroPhoto" src="assets/images/noienko-1.webp" alt="" fetchpriority="high">
+      <div class="hero__next">
+        <div class="hero__next-label" id="nextLabel">найближчий курс</div>
+        <h3 id="nextTitle">—</h3>
+        <p id="nextMeta">—</p>
+        <button class="btn btn--primary btn--sm btn--block" id="nextBtn" type="button">Забронювати місце</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ РОЗКЛАД ============ -->
+<section class="section" id="kursy">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Розклад</span>
+        <h2>Актуальні курси VSEODENT</h2>
+      </div>
+      <p>Найближчі дати — першими. Оберіть курс і бронюйте місце, або відкрийте детальну сторінку з програмою.</p>
+    </div>
+
+    <div class="cityfilter">
+      <h3 class="cityfilter__label">Оберіть ваше місто</h3>
+      <div class="cityfilter__chips" id="cityChips"></div>
+    </div>
+
+    <p class="filters__count" id="count"></p>
+    <div id="schedule"></div>
+  </div>
+</section>
+
+<!-- ============ ЯК ПРОХОДИТЬ ============ -->
+<section class="section section--wash" id="yak">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Як це працює</span>
+        <h2>Від заявки до сертифіката</h2>
+      </div>
+      <p>Чотири кроки — щоб ви розуміли, що буде далі після натискання кнопки.</p>
+    </div>
+    <div class="steps">
+      <article class="step is-live">
+        <h3>Заявка</h3>
+        <p>Обираєте курс і залишаєте контакти. Форма — три короткі кроки.</p>
+      </article>
+      <article class="step">
+        <h3>Підтвердження</h3>
+        <p>Менеджер пише у Viber: підтверджує місце, надсилає реквізити або рахунок для клініки.</p>
+      </article>
+      <article class="step">
+        <h3>День курсу</h3>
+        <p>Теорія вранці, практика після обіду. Працюєте руками, ставите питання спікеру напряму.</p>
+      </article>
+      <article class="step">
+        <h3>Сертифікат і бали</h3>
+        <p>Отримуєте сертифікат учасника. Лікарям нараховуються бали БПР за даними з форми.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ СПІКЕРИ ============ -->
+<section class="section" id="spikery">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Хто навчає</span>
+        <h2>Спікери</h2>
+      </div>
+      <p>Практикуючі лікарі, які щодня працюють у кріслі й показують те, що застосовують самі.</p>
+    </div>
+    <div class="speakers" id="speakers"></div>
+  </div>
+</section>
+
+<!-- ============ ЯК ПРОХОДИТЬ НАВЧАННЯ (ВІДЕО) ============ -->
+<section class="section" id="secHow">
+  <div class="container">
+    <h2 class="shead">Як проходить навчання</h2>
+    <p class="ssub">Живі фрагменти з практичних курсів VSEODENT</p>
+    <div class="vreel" id="videos"></div>
+    <div class="pstrip" id="photos"></div>
+  </div>
+</section>
+
+<!-- ============ ВІДГУКИ ============ -->
+<section class="section section--wash" id="secReviews">
+  <div class="container">
+    <h2 class="shead">Що говорять учасники курсів VSEODENT</h2>
+    <div class="reviews" id="reviews"></div>
+    <p class="ghint" id="reviewsHint">Тут будуть реальні відгуки учасників курсів.</p>
+    <div class="reviews__more"><button class="btn btn--ghost" id="reviewsMore" type="button">Показати всі відгуки</button></div>
+    <div class="carousel__dots" id="reviewsDots"></div>
+  </div>
+</section>
+
+<!-- ============ ЩО ОТРИМАЄТЕ ============ -->
+<section class="section section--wash">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Після курсу</span>
+        <h2>Що ви заберете з собою</h2>
+      </div>
+    </div>
+    <div class="gains">
+      <article class="gain">
+        <div class="gain__ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <h3>Готовий протокол</h3>
+        <p>Не набір розрізнених прийомів, а послідовність дій, яку можна повторити на будь-якому пацієнті.</p>
+      </article>
+      <article class="gain">
+        <div class="gain__ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2.5 12.4 7l5 .7-3.6 3.5.9 5-4.7-2.4-4.7 2.4.9-5L2.6 7.7l5-.7L10 2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Відпрацьовану навичку</h3>
+        <p>Практична частина на реальних зубах — помилки ви робите на курсі, а не на прийомі.</p>
+      </article>
+      <article class="gain">
+        <div class="gain__ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 3h12v14l-6-3-6 3V3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Сертифікат і бали БПР</h3>
+        <p>Сертифікат учасника, а для лікарів — бали безперервного професійного розвитку.</p>
+      </article>
+      <article class="gain">
+        <div class="gain__ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="7.5" cy="6.5" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 17c0-2.8 2.2-5 5-5s5 2.2 5 5M14 8.5h4M16 6.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Контакти колег</h3>
+        <p>Група лікарів із вашого регіону, з якими можна порадитися після курсу.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ДО / ПІСЛЯ ============ -->
+<section class="section section--wash" id="secTransform">
+  <div class="container">
+    <h2 class="shead">Що змінюється після навчання у VSEODENT</h2>
+    <div class="ba" id="ba"></div>
+    <div class="ba__cta">
+      <a class="btn btn--primary btn--lg" href="#kursy">Знайти курс під мою задачу</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПІДБІР КУРСУ (альтернативна конверсія) ============ -->
+<section class="section">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Не впевнені, який курс підійде саме вам?</h2>
+        <p>Залиште контакт — команда VSEODENT допоможе підібрати навчання за вашим напрямом, досвідом, містом та зручною датою.</p>
+      </div>
+      <div class="cta__actions">
+        <button class="btn btn--primary btn--block btn--lg" data-open-form data-lead-type="course_selection">Допоможіть підібрати курс</button>
+        <a class="btn btn--light btn--block" data-viber href="#">Написати у Viber</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--wash" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Питання</span>
+        <h2>Що зазвичай запитують</h2>
+      </div>
+    </div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ ФУТЕР ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img src="assets/images/logo.webp" alt="VSEODENT">
+        <p>Навчальний центр практичної стоматології. Курси з ендодонтії та професійної гігієни у містах України.</p>
+        <div class="footer__bpr">Провайдер БПР: <span data-bpr></span></div>
+      </div>
+      <div>
+        <h4>Навігація</h4>
+        <a href="#kursy">Розклад курсів</a>
+        <a href="#yak">Як проходить навчання</a>
+        <a href="#spikery">Спікери</a>
+      <a href="#secReviews">Відгуки</a>
+        <a href="#faq">Питання та відповіді</a>
+      </div>
+      <div>
+        <h4>Контакти</h4>
+        <a data-phone href="#">+380</a>
+        <a data-email href="#">email</a>
+        <a data-viber href="#">Viber</a>
+        <a data-telegram href="#">Telegram</a>
+        <a data-instagram href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year></span> VSEODENT</span>
+      <span>Реєструючись, ви погоджуєтесь на обробку персональних даних</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js?v=a41c7d2e"></script>
+<script src="assets/js/app.js?v=a41c7d2e"></script>
+<script src="assets/js/home.js?v=a41c7d2e"></script>
+<script src="assets/js/shared-blocks.js?v=a41c7d2e"></script>
+<script src="assets/js/videos.js?v=a41c7d2e"></script>
+<script src="assets/js/ba.js?v=a41c7d2e"></script>
+<script src="assets/js/form.js?v=a41c7d2e"></script>
+</body>
+</html>
