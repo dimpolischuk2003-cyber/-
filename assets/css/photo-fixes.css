@@ -1,0 +1,28 @@
+/* VSEODENT — speaker photo fixes, 2026-09-03 */
+
+/* Home speaker cards: all cutouts use the same 3:4 canvas.
+   Keep the full canvas pinned to the bottom; never translate the image upward. */
+.speaker__photo img,
+.speaker--noienko .speaker__photo img,
+.speaker--tarasovska .speaker__photo img,
+.speaker--fedak .speaker__photo img{
+  object-fit:contain !important;
+  object-position:center bottom !important;
+  transform:none !important;
+}
+
+/* Mobile home hero: for Igor we use a separate real portrait with more torso/arms. */
+@media (max-width:640px){
+  .hero__photo.hero__photo--real{
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio:3/4;
+    object-fit:cover !important;
+    object-position:center center !important;
+    margin:0 !important;
+    padding:0 !important;
+    background:none !important;
+    border-radius:var(--r-lg);
+    filter:none !important;
+  }
+}
