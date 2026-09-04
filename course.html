@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Курс | VSEODENT</title>
+<meta name="description" content="Практичний курс VSEODENT для стоматологів.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1516093250283344');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1516093250283344&ev=PageView&noscript=1" alt=""></noscript>
+<!-- /Meta Pixel -->
+<link rel="stylesheet" href="assets/css/styles.css?v=20260905b">
+<link rel="icon" href="assets/images/logo.webp">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__logo" href="index.html"><img src="assets/images/logo.webp" alt="VSEODENT" width="148" height="38"></a>
+    <nav class="header__nav">
+      <a href="index.html#kursy">Усі курси</a>
+      <a href="#program">Програма</a>
+      <a href="#speaker">Спікер</a>
+      <a href="#faq">Питання</a>
+      <a class="header__phone" data-phone href="tel:+380689260609">+38 068 926 06 09</a>
+      <button class="btn btn--primary btn--sm" data-book>Забронювати місце</button>
+    </nav>
+    <button class="header__burger" id="burger" aria-expanded="false" aria-label="Меню"><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="container">
+      <ul>
+        <li><a href="index.html#kursy">Усі курси</a></li>
+        <li><a href="#program">Програма курсу</a></li>
+        <li><a href="#speaker">Спікер</a></li>
+        <li><a href="#faq">Часті питання</a></li>
+        <li><a data-phone href="tel:+380689260609">+38 068 926 06 09</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="chero" id="sec-hero" data-rail="Курс">
+  <div class="container">
+    <nav class="crumbs"><a href="index.html">Головна</a> → <a href="index.html#kursy">Курси</a> → <span id="crumbTitle"></span></nav>
+
+    <div class="chero__grid">
+      <div class="chero__main">
+        <span class="eyebrow" id="eyebrow"></span>
+        <h1 id="h1"></h1>
+        <p class="chero__sub" id="subtitle"></p>
+
+        <div class="hfacts" id="heroFacts"></div>
+
+        <div class="chero__cta">
+          <button class="btn btn--primary btn--lg" data-book>Забронювати місце</button>
+          <a class="btn btn--ghost btn--lg" href="#secPricing">Дізнатися ціну</a>
+          <span class="chero__count" id="heroCountdown"></span>
+        </div>
+      </div>
+
+      <aside class="chero__speaker">
+        <div class="spcard">
+          <img id="heroSpeakerImg" src="" alt="" width="440" height="560" fetchpriority="high">
+          <div class="spcard__cap">
+            <b id="heroSpeakerName"></b>
+            <span id="heroSpeakerRole"></span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. РЕЗУЛЬТАТИ ============ -->
+<section class="section section--wash" id="secOutcomes" data-rail="Результати">
+  <div class="container">
+    <h2 class="shead">Після курсу ви зможете</h2>
+    <div class="carousel" id="outcomesCarousel">
+      <div class="carousel__track" id="outcomes"></div>
+      <div class="carousel__dots" id="outcomesDots"></div>
+    </div>
+    <p class="onote" id="outcomesNote"></p>
+  </div>
+</section>
+
+<!-- ============ 3. СПІКЕР ============ -->
+<section class="section" id="speaker" data-rail="Спікер">
+  <div class="container">
+    <h2 class="shead">Спікер курсу</h2>
+    <div class="spk">
+      <div class="spk__photo"><img id="spImg" src="" alt="" loading="lazy"></div>
+      <div class="spk__body">
+        <h3 id="spName"></h3>
+        <div class="spk__facts" id="spFacts"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. ЯК ПРОХОДИТЬ НАВЧАННЯ ============ -->
+<section class="section section--wash" id="secHow" data-rail="Як проходить">
+  <div class="container">
+    <h2 class="shead">Як проходить навчання</h2>
+    <p class="ssub">Живі фрагменти з практичних курсів VSEODENT</p>
+    <div class="vreel" id="videos"></div>
+    <div class="pstrip" id="photos"></div>
+  </div>
+</section>
+
+<!-- ============ 5. ДЛЯ КОГО ============ -->
+<section class="section" id="secAudience" data-rail="Для кого">
+  <div class="container">
+    <h2 class="shead">Кому підійде цей курс</h2>
+    <div class="acards" id="audience"></div>
+  </div>
+</section>
+
+<!-- ============ 6. ПРОГРАМА ============ -->
+<section class="section section--wash" id="program" data-rail="Програма">
+  <div class="container">
+    <h2 class="shead">Програма курсу</h2>
+
+    <div class="prog">
+      <div class="prog__main" id="programList"></div>
+      <aside class="prog__side" id="scheduleCard">
+        <h3 class="prog__sidehead">Розклад дня</h3>
+        <ol class="tl" id="scheduleList"></ol>
+      </aside>
+    </div>
+
+    <div class="pending" id="programSoon">
+      <div>
+        <b>Повну програму надсилаємо особисто</b>
+        <p>Залиште контакт — команда VSEODENT надішле актуальну програму цього курсу до підтвердження участі.</p>
+      </div>
+      <button class="btn btn--primary" data-book>Отримати програму</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ПРАКТИЧНА ЧАСТИНА ============ -->
+<section class="section" id="secPractice" data-rail="Практика">
+  <div class="container">
+    <h2 class="shead">Практична частина</h2>
+    <div class="practice">
+      <p class="practice__text" id="practiceText"></p>
+      <aside class="bring" id="bringCard">
+        <h3>Що потрібно взяти з собою</h3>
+        <ul id="bringList"></ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. ВІДГУКИ ============ -->
+<section class="section section--wash" id="secReviews" data-rail="Відгуки">
+  <div class="container">
+    <h2 class="shead">Що говорять учасники курсів VSEODENT</h2>
+    <div class="reviews" id="reviews"></div>
+    <p class="ghint" id="reviewsHint">Тут будуть реальні відгуки учасників курсів.</p>
+    <div class="carousel__dots" id="reviewsDots"></div>
+    <div class="reviews__more"><button class="btn btn--ghost" id="reviewsMore" type="button">Показати всі відгуки</button></div>
+  </div>
+</section>
+
+<!-- ============ 9. ВАРТІСТЬ УЧАСТІ ============ -->
+<section class="section" id="secPricing" data-rail="Вартість">
+  <div class="container">
+    <h2 class="shead">Вартість участі</h2>
+    <p class="ssub">Оберіть формат участі, який підходить саме вам.</p>
+    <div class="pcards" id="pricing"></div>
+    <div class="pricing__foot">
+      <button class="btn btn--primary btn--lg" data-book>Забронювати місце</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. ДО / ПІСЛЯ ============ -->
+<section class="section section--wash" id="secTransform" data-rail="Результат">
+  <div class="container">
+    <h2 class="shead">Що зміниться у вашій роботі після курсу</h2>
+    <div class="ba" id="ba"></div>
+  </div>
+</section>
+
+<!-- ============ 11. ЩО ВХОДИТЬ У ВАРТІСТЬ ============ -->
+<section class="section section--wash" id="secIncludes">
+  <div class="container">
+    <h2 class="shead">Що входить у вартість участі</h2>
+    <ul class="includes" id="includes"></ul>
+  </div>
+</section>
+
+<!-- ============ 12. ІНШІ МІСТА ============ -->
+<section class="section section--wash" id="secOther" data-rail="Інші дати">
+  <div class="container">
+    <h2 class="shead">Не підходить ця дата або місто?</h2>
+    <p class="ssub">Перегляньте інші найближчі дати цього курсу або оберіть інше навчання VSEODENT.</p>
+    <div class="dcards" id="otherDates"></div>
+    <a class="btn btn--ghost" href="index.html#kursy">Усі курси VSEODENT</a>
+  </div>
+</section>
+
+<!-- ============ 13. FAQ ============ -->
+<section class="section" id="faq" data-rail="Питання">
+  <div class="container container--narrow">
+    <h2 class="shead">Часті питання</h2>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ 14. ФІНАЛЬНИЙ CTA ============ -->
+<section class="section section--wash">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Готові систематизувати свій протокол?</h2>
+        <p>Залиште заявку — команда VSEODENT підтвердить наявність місця та допоможе з оформленням участі.</p>
+      </div>
+      <div class="cta__actions">
+        <button class="btn btn--primary btn--block btn--lg" data-book>Забронювати місце</button>
+        <a class="btn btn--light btn--block" data-viber href="#">Написати у Viber</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. ІНШІ КУРСИ ============ -->
+<section class="section" id="secOtherCourses">
+  <div class="container">
+    <h2 class="shead shead--sm">Інші актуальні курси</h2>
+    <div class="minis" id="otherCourses"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- смуга прогресу з розділами -->
+<nav class="rail" id="rail" aria-label="Розділи сторінки"></nav>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img src="assets/images/logo.webp" alt="VSEODENT" width="150" height="38" loading="lazy">
+        <p>Навчальний центр практичної стоматології.</p>
+        <div class="footer__bpr">Провайдер БПР: <span data-bpr></span></div>
+      </div>
+      <div>
+        <h4>Навігація</h4>
+        <a href="index.html#kursy">Усі курси та дати</a>
+        <a href="index.html#faq">Часті питання</a>
+      </div>
+      <div>
+        <h4>Контакти</h4>
+        <a data-phone href="tel:+380689260609">+38 068 926 06 09</a>
+        <a data-email href="#">email</a>
+        <a data-viber href="#">Viber</a>
+        <a data-telegram href="#">Telegram</a>
+        <a data-instagram href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year></span> VSEODENT</span>
+      <span><a href="index.html#kursy">← До всіх курсів</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <div class="sticky-bar__info">
+    <b id="stickyMain"></b>
+    <span id="stickySub"></span>
+  </div>
+  <button class="btn btn--primary" data-book>Забронювати</button>
+</div>
+
+<script src="assets/js/data.js?v=20260905b"></script>
+<script src="assets/js/app.js?v=20260905b"></script>
+<script src="assets/js/course.js?v=20260905b"></script>
+<script src="assets/js/shared-blocks.js?v=20260905b"></script>
+<script src="assets/js/videos.js?v=20260905b"></script>
+<script src="assets/js/ba.js?v=20260905b"></script>
+<script src="assets/js/form.js?v=20260905b"></script>
+</body>
+</html>
