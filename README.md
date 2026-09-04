@@ -157,4 +157,4 @@ python3 -m http.server 8000
 
 Ті самі події дублюються в `dataLayer` для Google Tag Manager. 
 
-Deployment trigger 04.09.2026
+Deployment trigger 04.09.2025
